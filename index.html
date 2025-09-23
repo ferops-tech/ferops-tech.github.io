@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Freelance DevOps Engineer - Jérémy F." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+          rel="stylesheet"
+  />
+  <script
+          src="https://kit.fontawesome.com/fa62c117c7.js"
+          crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Jérémy F. | DevOps Engineer</title>
+</head>
+<body id="top">
+<header class="header center">
+  <h3>
+    <a href="#top" class="link">JF.</a>
+  </h3>
+
+  <nav class="nav center">
+    <ul class="nav__list center">
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#projects">Projects</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#skills">Skills</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+    </button>
+
+    <button
+            type="button"
+            aria-label="toggle navigation"
+            class="btn btn--icon nav__hamburger"
+    >
+      <i aria-hidden="true" class="fas fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- About -->
+  <div class="about center">
+    <h1>Hi, I’m <span class="about__name">Jérémy Ferrante</span></h1>
+    <h2 class="about__role">
+      DevOps Engineer<br>
+      <span class="about__tech">AWS (Certified) | Kubernetes | IaC | CI/CD</span><br>
+      <span class="freelance">Freelance</span>
+    </h2>
+    <p class="about__desc">
+      <span>With 13+ years in IT and a progressive specialization in DevOps and cloud-native technologies, I build robust, scalable, and automated infrastructures.</span>
+      <span>I specialize in cloud platforms, container orchestration, CI/CD pipelines, and Infrastructure as Code, leveraging a strong foundation in operations and networking.</span>
+      <span>I help organizations streamline deployments, improve uptime, and automate workflows.</span>
+      <span>Let’s tackle your technical challenges and build solutions that scale.</span>
+    </p>
+
+
+
+
+
+    <div class="about__contact center">
+      <!-- Resume link will be added later -->
+      <a
+              href="https://github.com/ferops-tech"
+              aria-label="github"
+              class="link link--icon"
+      >
+        <i aria-hidden="true" class="fab fa-github"></i>
+      </a>
+
+      <a
+              href="https://www.linkedin.com/in/jeremy-ferrante-12a200129/"
+              aria-label="linkedin"
+              class="link link--icon"
+      >
+        <i aria-hidden="true" class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects__grid">
+      <div class="project">
+        <h3>Kubernetes Microservices Platform Setup</h3>
+        <p class="project__description">
+          Designed, implemented, and managed a distributed microservices architecture on Kubernetes, from environment setup to production deployment, ensuring high availability, scalability, and resilience.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">Kubernetes/Docker</li>
+          <li class="project__stack-item">Terraform</li>
+          <li class="project__stack-item">Ansible</li>
+          <li class="project__stack-item">Prometheus/Grafana/ELK</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>AWS Infrastructure Buildup</h3>
+        <p class="project__description">
+          Built from scratch a secure, highly available AWS environment with integrated monitoring and observability solutions.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">AWS</li>
+          <li class="project__stack-item">Terraform</li>
+          <li class="project__stack-item">Ansible</li>
+          <li class="project__stack-item">Bash/Python</li>
+          <li class="project__stack-item">Prometheus/Grafana/ELK/Nagios</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>CI/CD Pipeline Setup</h3>
+        <p class="project__description">
+          Designed, implemented, and optimized CI/CD pipelines to accelerate integration and enable smooth, reliable deployments.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">GitHub Action</li>
+          <li class="project__stack-item">Jenkins</li>
+          <li class="project__stack-item">ArgoCD</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>DevOps Demo Projects</h3>
+        <p class="project__description">
+          Designed, containerized, and deployed a fully documented Flask application demonstrating modern DevOps practices. Provisioned AWS infrastructure with Terraform, ran the Dockerized app on EC2, and implemented a monitoring stack using Prometheus and Grafana to visualize metrics and ensure observability.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">Python (Flask)</li>
+          <li class="project__stack-item">Docker</li>
+          <li class="project__stack-item">AWS</li>
+          <li class="project__stack-item">Terraform</li>
+          <li class="project__stack-item">Prometheus</li>
+          <li class="project__stack-item">Grafana</li>
+          <li class="project__stack-item">Git</li>
+        </ul>
+
+        <a
+                href="https://github.com/ferops-tech/devops-demo-projects"
+                aria-label="source code"
+                class="link link--icon"
+        >
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <h2 class="section__title">Skills</h2>
+    <ul class="skills__list">
+      <li class="skills__list-item btn btn--plain">AWS</li>
+      <li class="skills__list-item btn btn--plain">Docker</li>
+      <li class="skills__list-item btn btn--plain">Kubernetes</li>
+      <li class="skills__list-item btn btn--plain">Helm</li>
+      <li class="skills__list-item btn btn--plain">GitHub Actions</li>
+      <li class="skills__list-item btn btn--plain">Jenkins</li>
+      <li class="skills__list-item btn btn--plain">ArgoCD</li>
+      <li class="skills__list-item btn btn--plain">Terraform</li>
+      <li class="skills__list-item btn btn--plain">Ansible</li>
+      <li class="skills__list-item btn btn--plain">Bash/Python</li>
+      <li class="skills__list-item btn btn--plain">Elasticsearch</li>
+      <li class="skills__list-item btn btn--plain">RabbitMQ</li>
+      <li class="skills__list-item btn btn--plain">Redis</li>
+      <li class="skills__list-item btn btn--plain">Prometheus/Grafana</li>
+      <li class="skills__list-item btn btn--plain">ELK</li>
+      <li class="skills__list-item btn btn--plain">Vault</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact center" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <a href="mailto:jeremyf@ferops.tech">
+      <span class="btn btn--outline">Email me</span>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="link footer__link">Created by Jérémy F.</span>
+</footer>
+
+<div class="scroll-container">
+  <div class="scroll-top">
+    <a aria-label="Scroll up" href="#top">
+      <i aria-hidden="true" class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
