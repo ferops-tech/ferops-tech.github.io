@@ -214,10 +214,11 @@ button {
 
 .header {
   height: 8em;
-  max-width: 1100px;
+  max-width: 1200px;
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  border-bottom: 1px solid var(--clr-primary);
 }
 
 main {
@@ -428,4 +429,25 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+
+/*========
+  photo
+========*/
+
+.about__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally, adjust if needed */
+  gap: 1rem; /* space between photo and text */
+  flex-wrap: wrap; /* make it responsive */
+}
+
+.about__photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--clr-primary); /* optional, gives a nice accent border */
 }

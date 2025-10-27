@@ -86,7 +86,11 @@
 <main>
   <!-- About -->
   <div class="about center">
-    <h1>Hi, I’m <span class="about__name">Jérémy Ferrante</span></h1>
+    <div class="about__intro">
+      <img src="resources/profile.png" alt="Jérémy Ferrante" class="about__photo" />
+      <h1>Hi, I’m <span class="about__name">Jérémy Ferrante</span></h1>
+    </div>
+
     <h2 class="about__role">
       DevOps Engineer<br>
       <span class="about__tech">AWS (Certified) | Kubernetes | IaC | CI/CD</span><br>
@@ -98,9 +102,6 @@
       <span>I help organizations streamline deployments, improve uptime, and automate workflows.</span>
       <span>Let’s tackle your technical challenges and build solutions that scale.</span>
     </p>
-
-
-
 
     <div class="about__contact center">
       <!-- Resume link will be added later -->
@@ -201,7 +202,8 @@
       <div class="project">
         <h3>Demo - Kubernetes Cloud Deployment</h3>
         <p class="project__description">
-          Designed and deployed an application on Kubernetes, leveraging Helm charts for flexible and repeatable deployments. Managed cloud deployment on Amazon EKS and integrated a complete monitoring stack using Prometheus and Grafana to provide real-time metrics and ensure system observability.        </p>
+          Designed and deployed an application on Kubernetes, leveraging Helm charts for flexible and repeatable deployments. Managed cloud deployment on Amazon EKS and integrated a complete monitoring stack using Prometheus and Grafana to provide real-time metrics and ensure system observability.
+        </p>
         <ul class="project__stack">
           <li class="project__stack-item">Helm</li>
           <li class="project__stack-item">Kubernetes</li>
@@ -212,6 +214,27 @@
         </ul>
         <a
                 href="https://github.com/ferops-tech/devops-demo-projects/tree/main/demo-kubernetes-orchestration"
+                aria-label="Project Repo"
+                class="link link--icon"
+        >
+          <i aria-hidden="true" class="fab fa-github"></i>
+          <span style="margin-left:0.4em; font-size:0.8rem;">Project Repo</span>
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>Demo - Gitops CI/CD Setup</h3>
+        <p class="project__description">
+          Implemented a full GitOps-based CI/CD pipeline using GitHub Actions, ArgoCD, and Helm to automate the deployment of a containerized application on Kubernetes.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">Github Actions</li>
+          <li class="project__stack-item">ArgoCD</li>
+          <li class="project__stack-item">K8d</li>
+          <li class="project__stack-item">Terraform</li>
+        </ul>
+        <a
+                href="https://github.com/ferops-tech/devops-demo-projects/tree/ef09992f6f45dc7465d86c4d7570b1009d298d89/demo-gitops-argocd"
                 aria-label="Project Repo"
                 class="link link--icon"
         >
